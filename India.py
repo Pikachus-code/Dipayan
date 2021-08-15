@@ -7,7 +7,7 @@ screen = turtle.Screen()
 
 # Defining a turtle Instance
 t = turtle.Turtle()
-speed('fastest')
+t.speed(50)
 
 
 t.penup()
@@ -79,14 +79,14 @@ t.goto(23, 142)
 t.pendown()
 t.color("navy")
 for i in range(24):
-	t.begin_fill()
-	t.circle(3)
-	t.end_fill()
-	t.penup()
-	t.forward(15)
-	t.right(15)
-	t.pendown()
-	
+  t.begin_fill()
+  t.circle(3)
+  t.end_fill()
+  t.penup()
+  t.forward(15)
+  t.right(15)
+  t.pendown()
+  
 # Small Blue Circle
 t.penup()
 t.goto(100, 150)
@@ -100,20 +100,23 @@ t.goto(80, 150)
 t.pendown()
 t.pensize(2)
 for i in range(24):
-	t.forward(60)
-	t.backward(60)
-	t.left(15)
-goto(-300, 0)
+  t.forward(60)
+  t.backward(60)
+  t.left(15)
+
+turtle.pencolor('green')
 t.penup()
-goto(-100, -350)
-turtle.pencolor("black")
+goto(-280, -100)
 t.pendown()
+
+goto(-130, -335)
+turtle.pencolor("black")
 turtle.write(
     "HAPPY INDEPENDENCE DAY",
-    font=("Comic Sans", 24, "bold"))
-t.penup()
+    font=("Comic Sans", 35, "bold"))
 
-	
+
+  
 #to hold the
 #output window
 turtle.done()
